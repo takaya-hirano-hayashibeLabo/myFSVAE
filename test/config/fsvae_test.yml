@@ -1,0 +1,18 @@
+Network:
+  epochs: 250
+  batch_size: 2
+  n_steps: 16 # timestep
+  # dataset: "MNIST"
+  in_channels: 3
+  data_path: "./data"
+  lr: 0.01
+  # n_class: 10
+  latent_dim: 32
+  input_size: 32
+  model: "FSVAE" # FSVAE or  FSVAE_large
+  k: 20 # multiplier of channel
+  scheduled: true # whether to apply scheduled sampling
+  loss_func: 'mmd' # mmd or kld
+
+
+  
